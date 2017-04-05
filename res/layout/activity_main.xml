@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <com.example.toolbar.CustomToolBar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+    
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    	
+    	<FrameLayout
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent">
+    		<TextView
+    			android:layout_width="match_parent"
+    		   	android:layout_height="match_parent" 
+    		   	android:text="主页面"/>
+		</FrameLayout> 
+		
+    	<FrameLayout 
+    		android:layout_gravity="start"
+        	android:background="#000"
+        	android:layout_width="200dp"
+        	android:layout_height="match_parent"> 
+       		<TextView
+    			android:layout_width="match_parent"
+    		   	android:layout_height="match_parent" 
+    		   	android:text="菜单页面"/>
+       	</FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
